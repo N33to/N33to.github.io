@@ -188,8 +188,8 @@
 
     <section class="stats" aria-label="Números dos projetos">
       <div class="card stat"><div class="v">7</div><div class="k">Projetos</div></div>
-      <div class="card stat"><div class="v">157 mil</div><div class="k">Linhas de código</div></div>
-      <div class="card stat"><div class="v">128</div><div class="k">Tabelas em 3 bancos</div></div>
+      <div class="card stat"><div class="v">145 mil</div><div class="k">Linhas de código</div></div>
+      <div class="card stat"><div class="v">129</div><div class="k">Tabelas em 3 bancos</div></div>
       <div class="card stat"><div class="v">10</div><div class="k">Integrações</div></div>
     </section>
 
@@ -269,8 +269,8 @@
   const mil = n => n.toLocaleString('pt-BR');
 
   /* ---------- dados medidos nos projetos (não vêm da API: o código não é público) ---------- */
-  const LOC = [['PHP',72055,'#8993be'],['Python',44483,'#4b8bbe'],['JavaScript',30459,'#f1e05a'],['CSS',5713,'#bc8cff'],['SQL',2249,'#e38c00'],['Outras',2191,'#6e7681']];
-  const BANCOS = [['MySQL / MariaDB',74,'ERP em produção'],['PostgreSQL (Supabase)',34,'espelho de dados auxiliares'],['SQLite',20,'apps de mesa e contratos']];
+  const LOC = [['PHP',66312,'#8993be'],['Python',41034,'#4b8bbe'],['JavaScript',28468,'#f1e05a'],['CSS',5189,'#bc8cff'],['SQL',1944,'#e38c00'],['Outras',1999,'#6e7681']];
+  const BANCOS = [['MySQL / MariaDB',75,'ERP em produção'],['PostgreSQL (Supabase)',34,'espelho de dados auxiliares'],['SQLite',20,'apps de mesa e contratos']];
   const INTEG = [
     ['Supabase','espelho de dados auxiliares'],['Google Drive API','documentos em pastas do Drive'],
     ['E-mail (IMAP)','coleta de boletos e notas fiscais'],['Extratos bancários','importação OFX/CSV para conciliação'],
@@ -286,7 +286,7 @@
   const PROJ = [
     {n:'erp-gestao-empresarial', t:'ERP de gestão', main:true, tag:'em produção',
      d:'Sistema web multiusuário, construído do zero para uma empresa de construção civil. Substitui planilhas e três programas por um site único: ponto, financeiro com conciliação bancária, documentos e obras, com permissões por perfil e auditoria.',
-     s:['PHP 8.2+','MySQL','JavaScript','HTML','CSS'], nums:[['9','módulos'],['74','tabelas'],['~96 mil','linhas'],['43','arquivos de teste']]},
+     s:['PHP 8.2+','MySQL','JavaScript','HTML','CSS'], nums:[['9','módulos'],['75','tabelas'],['~87 mil','linhas'],['44','arquivos de teste']]},
     {n:'scanner-documentos-rh', t:'Scanner de documentos de RH', d:'Separa PDFs gigantes em um documento por arquivo, identifica tipo, competência e colaborador, com OCR local e relatório de confiança.', s:['Python','OCR','WebView2']},
     {n:'gerador-contratos', t:'Gerador de contratos', d:'Lê a proposta comercial em PDF e monta o contrato em Word, com conferência campo a campo e histórico de versões.', s:['PHP','SQLite','JavaScript']},
     {n:'dp-documentos-web', t:'DP Web', d:'Dossiê de documentos por colaborador e exigências por obra, com motor de OCR para classificar PDFs escaneados.', s:['PHP','MySQL','Python']},
